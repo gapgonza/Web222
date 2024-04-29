@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* mio */
+:root{
+  --color-acento: #ee6130;
+  --color-acento-claro: #ee613033;
+  --color-texto: black;
+}
+
+body{
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.escondido{
+  display: none;
+}
+
+a{
+  background-color: unset;
+  border:unset;
+  cursor:pointer;
+  text-decoration: none;
+  transition: 200ms;
+  color: var(--color-texto);
+}
+
+
+button{
+  transition: 200ms;
+}
+
+a:hover:not(#cart), button:hover{
+  color: var(--color-acento);
+}
+
+header{
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.09);
+  margin-bottom: 10px;
+  font-size: larger;
+}
+header nav{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 60px;
+}
+
+#logo{
+  height: 40px;
+  margin: 20px;
+}
+
+header nav div{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+header nav img{
+  height: 25px;
+}
+
+#cuenta-carrito{
+  position: absolute;
+  background-color: var(--color-acento);
+  border-radius: 100%;
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  aspect-ratio: 1;
+  text-align: center;
+  /* margin-bottom: 15px; */
+}
+
+footer{
+  text-align: center;
+  box-shadow: -1px -3px 5px rgba(0, 0, 0, 0.09);
+  padding-top: 2px;
+  margin-top: auto;
+}
+
+footer a{
+  text-decoration: underline;
+}
+
+/* mio */
+h1{
+  text-align: center;
+  margin-top: 20px;
+}
+
+main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 18px;
+}
+
+.image-container {
+  display: flex;
+}
+
+.image-container img{
+  width: 100%;
+}
+
+.card img{
+  width: 30%;
+  max-width: 100%;
+  height: auto;
+}
+
+.card h3{
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.card p{
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+
+/* Estilos para la banda "de oferta" */
+.card.oferta {
+  position: relative; /* Establece la posición relativa para que los elementos absolutamente posicionados estén relativos a este contenedor */
+}
+
+.card.oferta::before {
+  content: "OFERTA"; /* Contenido de la banda "de oferta" */
+  position: absolute; /* Posiciona el elemento absolutamente */
+  top: 0; /* Alinea la banda "de oferta" en la parte superior del contenedor */
+  left: 0; /* Alinea la banda "de oferta" a la izquierda del contenedor */
+  background-color: red; /* Color de fondo de la banda "de oferta" */
+  color: white; /* Color de texto de la banda "de oferta" */
+  padding: 5px 10px; /* Espaciado interno de la banda "de oferta" */
+  font-weight: bold; /* Establece el peso de la fuente a negrita */
+}
+
+section {
+  border: 1px solid #d88b8b;
+  border-radius: 20px;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}

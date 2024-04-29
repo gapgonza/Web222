@@ -1,0 +1,22 @@
+[
+    {
+      "id": 1,
+      "descuento": 10
+    },
+    {
+      "id": 3,
+      "descuento": 5
+    },
+    {
+      "id": 8,
+      "descuento": 20
+    },
+    {
+      "id": 12,
+      "descuento": 15
+    },
+    {
+      "id":17,
+      "descuento": 10
+    }
+  ]
